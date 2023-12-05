@@ -17,9 +17,9 @@ fun main(args: Array<String>) {
 }
 
 fun filter(in1: List<String>, in2: List<String>): List<String> {
-    val res:List<String> = mutableListOf()
+    var res:MutableList<String> = mutableListOf()
     for (s in in1) {
-        if (in2.contains(s)) res.addLast(s)
+        if (in2.contains(s)) res.add(s)
     }
     return res
 }
